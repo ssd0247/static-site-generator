@@ -68,7 +68,7 @@ func readConfig() (*config.Config, error) {
 		return nil, fmt.Errorf("could not parse config: %v", err)
 	}
 	if cfg.Generator.Repo == "" {
-		return nil, fmt.Errorf("Please provide a repository URL, e.g.: https://github.com/ssd0247/blog")
+		return nil, fmt.Errorf("please provide a repository URL, e.g.: https://github.com/ssd0247/blog")
 	}
 	if cfg.Generator.Tmp == "" {
 		cfg.Generator.Tmp = "tmp"
@@ -77,22 +77,22 @@ func readConfig() (*config.Config, error) {
 		cfg.Generator.Dest = "www"
 	}
 	if cfg.Blog.URL == "" {
-		return nil, fmt.Errorf("Please provide a Blog URL, e.g.: https://www.ssd0247.github.io/blog")
+		return nil, fmt.Errorf("please provide a Blog URL, e.g.: https://www.ssd0247.github.io/blog")
 	}
 	if cfg.Blog.Language == "" {
 		cfg.Blog.Language = "en-us"
 	}
 	if cfg.Blog.Description == "" {
-		return nil, fmt.Errorf("Please provide a Blog Description, e.g.: A blog about Statistics, First-Order Logic, Programming, Software Development, and all that brings ML/AI to life!")
+		return nil, fmt.Errorf("please provide a Blog Description, e.g.: A blog about Statistics, First-Order Logic, Programming, Software Development, and all that brings ML/AI to life")
 	}
 	if cfg.Blog.Dateformat == "" {
 		cfg.Blog.Dateformat = "14.07.2023"
 	}
 	if cfg.Blog.Title == "" {
-		return nil, fmt.Errorf("Please provide a Blog Title, e.g.: What does 'support-vectors' mean in SVM?")
+		return nil, fmt.Errorf("please provide a Blog Title, e.g.: What does 'support-vectors' mean in SVM?")
 	}
 	if cfg.Blog.Author == "" {
-		return nil, fmt.Errorf("Please provide a Blog author, e.g.: Shubham Dhapola")
+		return nil, fmt.Errorf("please provide a Blog author, e.g.: Shubham Dhapola")
 	}
 	if cfg.Blog.Frontpageposts == 0 {
 		cfg.Blog.Frontpageposts = 10

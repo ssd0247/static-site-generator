@@ -5,6 +5,7 @@ go 1.18
 require (
 	github.com/PuerkitoBio/goquery v1.8.1
 	github.com/alecthomas/chroma v0.10.0
+	github.com/beevik/etree v1.2.0
 	github.com/russross/blackfriday v1.6.0
 	gopkg.in/yaml.v2 v2.4.0
 )
